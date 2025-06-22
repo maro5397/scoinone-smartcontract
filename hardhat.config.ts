@@ -9,7 +9,7 @@ const config: HardhatUserConfig = {
       gasPrice: 875000000,
     },
     sepolia: {
-      url: process.env.SEPOLIA_RPC_URL || "",
+      url: process.env.TESTNET_RPC_URL || "",
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
     },
   },
